@@ -26,7 +26,7 @@ outputs/results/*.json
 outputs/results/*.csv
 # Deliverables cần push
 !outputs/graphs/kg_llm.png
-!outputs/graphs/kg_test.png
+!outputs/graphs/kg_spacy.png
 !outputs/results/benchmark.csv
 !outputs/results/token_usage.csv
 
