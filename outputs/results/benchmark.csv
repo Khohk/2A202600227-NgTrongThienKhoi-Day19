@@ -1,0 +1,104 @@
+id,failure_mode,question,expected_answer,flat_rag_answer,flat_rag_time_s,flat_rag_correct,hybrid_rag_answer,hybrid_rag_time_s,hybrid_rag_correct,why_flat_rag_fails,notes
+1,MH,What role did Dario Amodei hold at OpenAI before he co-founded Anthropic?,Vice President of Research,Dario Amodei was Vice President of Research at OpenAI before he co-founded Anthropic.,2.36,Y,"Dario Amodei was the Vice President of Research at OpenAI before he co-founded Anthropic.
+
+[Sources: Anthropic.md, OpenAI.md, Google_DeepMind.md, Nvidia.md, Microsoft.md]",1.75,Y,Dario appears in Anthropic.md as founder; his OpenAI role is only in OpenAI.md. Flat RAG retrieves one chunk and misses the cross-entity link.,
+2,MH,Anthropic uses AWS as its primary cloud provider. Which company owns AWS and who are AWS's main cloud competitors in this corpus?,Amazon owns AWS; competitors include Microsoft Azure and Google Cloud,Amazon owns AWS. The main cloud competitors mentioned in this context are Google and Microsoft.,1.69,Y,"Anthropic uses Amazon Web Services (AWS) as its primary cloud provider. AWS is owned by Amazon. The main cloud competitors of AWS mentioned in this corpus are Google Cloud and Microsoft Azure.
+
+[Sources: Anthropic.md, Google_DeepMind.md, Nvidia.md, OpenAI.md, Microsoft.md]",2.56,Y,Requires 2-hop: Anthropic -> uses AWS -> owned by Amazon -> competes with Azure/GCP. Flat RAG retrieves the Anthropic chunk but cannot follow the ownership chain.,
+3,MH,Nvidia gifted its first DGX-1 supercomputer to OpenAI in 2016. How much did Nvidia later invest in OpenAI's 2026 funding round?,$30 billion,Not found in context.,0.92,N,"In the 2026 funding round totaling $30 billion, Nvidia was among the investors. However, the specific amount that Nvidia invested in that round is not detailed in the provided sources. Therefore, the exact investment amount from Nvidia in the 2026 funding round is ""Not found.""
+
+[Sources: Nvidia.md, Anthropic.md, Google_DeepMind.md, OpenAI.md, Microsoft.md]",2.45,N,Two facts about Nvidia<->OpenAI are in distant chunks. Flat RAG retrieves one but rarely both; GraphRAG links the Nvidia node across hops.,
+4,MH + CD,Mustafa Suleyman co-founded DeepMind in 2010. What role did he later take at Microsoft in 2024?,CEO of Microsoft AI,Mustafa Suleyman joined Microsoft as CEO of Microsoft AI in 2024.,1.08,Y,"Mustafa Suleyman co-founded DeepMind in 2010 and later took the role of CEO of Microsoft AI in 2024.
+
+[Sources: Google_DeepMind.md, Microsoft.md, Anthropic.md, Nvidia.md, OpenAI.md]",1.21,Y,DeepMind co-founders are in Google_DeepMind.md; Suleyman's Microsoft role is in Microsoft.md. Flat RAG cannot connect the same person across two documents.,
+5,MH,OpenAI's services are hosted on Microsoft Azure. What product did Microsoft build using OpenAI's GPT-4 model?,"Copilot, integrated into Windows 11 and Microsoft 365",Microsoft built Copilot using OpenAI's GPT-4 model.,1.28,Y,"Microsoft built Copilot using OpenAI's GPT-4 model. Copilot is integrated into Windows 11 and Microsoft 365.
+
+[Sources: Microsoft.md, Google_DeepMind.md, Anthropic.md, Nvidia.md, OpenAI.md]",1.46,Y,Requires chaining: OpenAI -> hosted on Azure -> Microsoft used GPT-4 -> Copilot. Flat RAG finds the hosting fact but misses the downstream product link.,
+6,MH,Google invested in Anthropic and also provides compute hardware. What type of hardware does Google give Anthropic access to for model training?,Custom TPU chips,Google provides Anthropic access to its custom TPU chips for model training.,1.12,Y,"Google provides Anthropic access to its custom TPU chips for model training as part of their partnership.
+
+[Sources: Anthropic.md, Google_DeepMind.md, Nvidia.md, OpenAI.md, Microsoft.md]",1.12,Y,Investment fact and TPU hardware fact are in separate chunks of Anthropic.md. GraphRAG connects Google -> INVESTED_IN -> Anthropic and Google -> PROVIDED_TPU -> Anthropic.,
+7,MH + CD,Anthropic partnered with Palantir and AWS to serve US intelligence agencies. Which other company in this corpus also received a DoD AI contract in July 2025?,OpenAI ($200M DoD contract),Not found in context.,0.92,N,"Not found.
+
+[Sources: Anthropic.md, Google_DeepMind.md, Nvidia.md, OpenAI.md, Microsoft.md]",0.91,N,DoD contracts are in both Anthropic.md and OpenAI.md. Flat RAG retrieves one document's chunk; GraphRAG traverses the shared DoD node.,
+8,MH + CD,"A co-founder of DeepMind later left to co-found Inflection AI, then joined Microsoft. Who is this person and what role did they take at Microsoft?",Mustafa Suleyman became CEO of Microsoft AI in 2024,Not found in context.,0.88,N,"The person is Mustafa Suleyman. He co-founded DeepMind, later co-founded Inflection AI, and then joined Microsoft as the CEO of Microsoft AI in 2024.
+
+[Sources: Google_DeepMind.md, Microsoft.md, Anthropic.md, Nvidia.md, OpenAI.md]",1.83,Y,Requires linking DeepMind founders (Google_DeepMind.md) to Microsoft role (Microsoft.md). Flat RAG cannot bridge two separate documents through a shared person node.,
+9,CD,Which companies in this corpus has Microsoft directly invested in?,"OpenAI ($1B in 2019, $10B in 2023)",OpenAI.,0.89,Y,"Microsoft has directly invested in the following companies:
+
+1. OpenAI - Microsoft invested $1 billion in 2019 and $10 billion in January 2023.
+2. Anthropic - Microsoft is expected to invest in Anthropic.
+
+[Sources: Anthropic.md, Microsoft.md, Google_DeepMind.md, Nvidia.md, OpenAI.md]",1.51,Y,Investment facts are in OpenAI.md and Microsoft.md. Flat RAG retrieves whichever chunk is most similar and may miss the other file.,
+10,CD,Which single company in this corpus has received large investments from both Amazon and Google?,"Anthropic (Amazon $4B+$3.5B, Google $500M+$300M)",Not found in context.,0.95,N,"The single company in this corpus that has received large investments from both Amazon and Google is Anthropic. Google invested $500 million in Anthropic in 2022 and committed an additional $300 million in 2023. Additionally, Amazon has invested in OpenAI, which competes with Anthropic, but there is no direct investment from Amazon to Anthropic mentioned in the provided context. Therefore, the answer is:
+
+**Anthropic**.
+
+[Sources: OpenAI.md, Anthropic.md, Microsoft.md, Nvidia.md, Google_DeepMind.md]",2.17,Y,Both investment facts live in Anthropic.md in separate chunks. GraphRAG connects Anthropic -> INVESTED_BY -> Amazon and Anthropic -> INVESTED_BY -> Google.,
+11,CD,Compare how OpenAI and Anthropic differ in their relationship with the US Department of Defense.,OpenAI accepted a $200M DoD contract; Anthropic rejected Pentagon demands and was designated a supply-chain risk.,Not found in context.,0.9,N,"OpenAI and Anthropic have distinct relationships with the US Department of Defense (DoD).
+
+1. **OpenAI's Relationship with the DoD**:
+   - OpenAI has been awarded contracts by the DoD, indicating a collaborative relationship where OpenAI provides AI services that the DoD finds valuable.
+   - OpenAI's CEO, Sam Altman, leads the organization in developing AI technologies that may be utilized by the government.
+
+2. **Anthropic's Relationship with the DoD**:
+   - Anthropic has been designated as a supply chain risk by the DoD in 2025, which suggests a more cautious or critical stance from the DoD towards Anthropic.
+   - Anthropic has faced threats from Pete Hegseth regarding the potential cutting of government contracts, indicating tension in their relationship.
+   - Additionally, Anthropic has rejected Pentagon demands concerning the use of offensive AI, which reflects a more adversarial position compared to OpenAI's collaborative approach.
+
+In summary, while OpenAI has a cooperative relationship with the DoD, receiving contracts and support, Anthropic's relationship is marked by scrutiny, threats, and a rejection of certain demands, highlighting a more contentious dynamic.
+
+[Sources: Anthropic.md, OpenAI.md, Google_DeepMind.md, Nvidia.md, Microsoft.md]",3.4,Y,Requires reading both OpenAI.md and Anthropic.md and comparing two stances. Flat RAG retrieves one company's chunk and ignores the other.,
+12,GT,Which companies in this corpus are facing or have faced antitrust or regulatory investigations?,"Microsoft (EU antitrust on Teams bundling, US DOJ investigation)",Not found in context.,0.97,N,"The companies in this corpus that are facing or have faced antitrust or regulatory investigations include:
+
+1. **Microsoft** - The European Union has opened investigations into Microsoft, and the US Department of Justice has investigated Microsoft as well. 
+
+No other companies in the provided context are mentioned as facing antitrust or regulatory investigations.
+
+[Sources: Anthropic.md, Google_DeepMind.md, Nvidia.md, OpenAI.md, Microsoft.md]",1.57,Y,Regulatory facts are in different sections of Microsoft.md. GraphRAG aggregates via INVESTIGATED_BY edges across company nodes.,
+13,GT + CD,What primary cloud service does each AI company in this corpus rely on for its infrastructure?,"OpenAI->Microsoft Azure, Anthropic->Amazon Web Services",Not found in context.,0.87,N,"- **Anthropic** relies on **Amazon Web Services** for its infrastructure.
+- **OpenAI** is hosted on **Microsoft Azure**.
+- **Google DeepMind** uses **Google Cloud** for its infrastructure.
+
+[Sources: Anthropic.md, Google_DeepMind.md, Nvidia.md, OpenAI.md, Microsoft.md]",1.42,Y,Cloud provider facts are in OpenAI.md and Anthropic.md separately. GraphRAG can traverse USES_CLOUD edges from each company node.,
+14,CD,"Jan Leike and John Schulman both left the same company in 2024 to join Anthropic. What company did they leave, and who is its CEO?",They left OpenAI; Sam Altman is CEO of OpenAI,Not found in context.,1.05,N,"Jan Leike and John Schulman both left OpenAI in 2024 to join Anthropic. The CEO of OpenAI is Sam Altman.
+
+[Sources: Anthropic.md, Google_DeepMind.md, Nvidia.md, OpenAI.md, Microsoft.md]",1.18,Y,Both facts (researchers leaving OpenAI) appear across OpenAI.md and Anthropic.md. Flat RAG retrieves whichever chunk is more similar and may miss the connection.,
+15,MH,Which company in this corpus acquired a hardware startup co-founded by a former Apple designer?,"OpenAI acquired 'io', co-founded by Jony Ive (former Apple designer)",OpenAI,1.02,Y,"OpenAI acquired the hardware startup ""io,"" which was co-founded by former Apple designer Jony Ive, in 2025. The acquisition was valued at approximately $6.5 billion.
+
+[Sources: Anthropic.md, Google_DeepMind.md, Nvidia.md, OpenAI.md, Microsoft.md]",1.28,Y,Requires chaining: acquisition -> founder background -> Apple. Flat RAG retrieves the acquisition fact but drops the Apple designer detail.,
+16,GT + CD,Which companies in this corpus were founded by people who previously worked at other companies also in this corpus?,Anthropic (founded by ex-OpenAI employees including Dario and Daniela Amodei),"Anthropic was co-founded by Dario Amodei, who was Vice President of Research at OpenAI before leaving to co-found Anthropic. Jan Leike and John Schulman, who were senior researchers at OpenAI, also left to join Anthropic.",1.85,Y,"The companies in this corpus that were founded by people who previously worked at other companies also in this corpus are:
+
+1. **Anthropic** - Co-founded by Dario Amodei, who was Vice President of Research at OpenAI before leaving to co-found Anthropic. Additionally, Jan Leike and John Schulman, who were senior researchers at OpenAI, joined Anthropic after leaving OpenAI.
+
+2. **OpenAI** - Founded by Dario Amodei, who previously worked at OpenAI before co-founding Anthropic. 
+
+Thus, both Anthropic and OpenAI are connected through their founders' previous affiliations.
+
+[Sources: Anthropic.md, Google_DeepMind.md, Nvidia.md, OpenAI.md, Microsoft.md]",2.08,Y,Requires cross-referencing founder backgrounds across documents. Flat RAG cannot aggregate this relationship across the entire corpus.,
+17,GT + CD,"Which AI model product lines exist in this corpus, and which company produced each?","GPT/DALL-E/Sora->OpenAI, Claude->Anthropic, Gemini/AlphaGo/AlphaFold->Google DeepMind","The AI model product lines in this corpus and their respective companies are:
+
+1. GPT series (including GPT-3, GPT-4, and GPT-4o) - produced by OpenAI.
+2. DALL-E - produced by OpenAI.
+3. Sora - produced by OpenAI.
+4. ChatGPT - produced by OpenAI.
+5. Codex - produced by OpenAI (used as the basis for GitHub Copilot, which is built by Microsoft).",2.19,N,"The AI model product lines mentioned in the corpus and their respective producing companies are as follows:
+
+1. **GPT series** (including GPT-3, GPT-4, and GPT-4o) - Produced by **OpenAI**.
+2. **DALL-E** - Produced by **OpenAI** for image generation.
+3. **Sora** - Produced by **OpenAI** for video generation.
+4. **ChatGPT** - Produced by **OpenAI** as a consumer AI product.
+5. **Codex** - Produced by **OpenAI**, used as the basis for GitHub Copilot built by **Microsoft**.
+6. **Claude** - Produced by **Anthropic**.
+
+Additionally, the **Gemini series** is developed by **Google DeepMind** and competes with OpenAI's GPT-4 and Anthropic's Claude.
+
+[Sources: Anthropic.md, Google_DeepMind.md, Nvidia.md, OpenAI.md, Microsoft.md]",3.18,Y,Product lines are in separate documents. Flat RAG retrieves top-k similar chunks; GraphRAG traverses DEVELOPED_BY edges.,
+18,MH,"Which company in this corpus has the highest post-money valuation as of 2026, and who led its most recent funding round?",OpenAI ($852B valuation); Amazon invested $50B in February 2026,"OpenAI has the highest post-money valuation of $852 billion as of 2026. The most recent funding round, totaling $30 billion, included Nvidia among the investors.",1.43,Y,"As of 2026, OpenAI has the highest post-money valuation, reaching $852 billion. The most recent funding round, totaling $30 billion, included Nvidia as one of the investors.
+
+[Sources: Anthropic.md, Google_DeepMind.md, Nvidia.md, OpenAI.md, Microsoft.md]",1.27,Y,Valuation and lead-investor facts are in separate paragraphs of OpenAI.md. Flat RAG may retrieve the valuation chunk but miss the investor chain.,
+19,MH + CD,Nvidia invested in OpenAI's 2026 round. Which other company in this corpus is Nvidia also expected to invest in?,Anthropic (Nvidia and Microsoft expected to invest up to $15B),Anthropic,0.8,Y,"Nvidia is also expected to invest in Anthropic, alongside Microsoft, with an expected investment of up to $15 billion as of November 2025.
+
+[Sources: Nvidia.md, Anthropic.md, Google_DeepMind.md, OpenAI.md, Microsoft.md]",1.46,Y,Nvidia->OpenAI is in OpenAI.md; Nvidia->Anthropic is in Anthropic.md. Flat RAG retrieves one; GraphRAG connects Nvidia as a shared investor node.,
+20,GT,Google DeepMind developed Gemini to compete with OpenAI. Name two other AI products from Google DeepMind that are NOT language models.,AlphaGo (Go-playing AI) and AlphaFold (protein structure prediction),AlphaGo and AlphaFold.,1.03,Y,"Two other AI products from Google DeepMind that are not language models are AlphaGo, which was the first AI to defeat a world Go champion, and AlphaFold, which is used for protein structure prediction.
+
+[Sources: Google_DeepMind.md, Nvidia.md, OpenAI.md, Microsoft.md, Anthropic.md]",1.57,Y,Requires reading all of Google_DeepMind.md and filtering non-LLM products. Flat RAG returns whichever chunk scores highest on 'AI products' similarity.,

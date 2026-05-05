@@ -1,0 +1,784 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d5" for="edge" attr.name="year" attr.type="long"/>
+<key id="d4" for="edge" attr.name="source_chunk" attr.type="long"/>
+<key id="d3" for="edge" attr.name="source_file" attr.type="string"/>
+<key id="d2" for="edge" attr.name="relation" attr.type="string"/>
+<key id="d1" for="node" attr.name="color" attr.type="string"/>
+<key id="d0" for="node" attr.name="node_type" attr.type="string"/>
+<graph edgedefault="directed"><node id="Dario Amodei">
+  <data key="d0">Person</data>
+  <data key="d1">#4A90D9</data>
+</node>
+<node id="Anthropic">
+  <data key="d0">Organization</data>
+  <data key="d1">#E85D4A</data>
+</node>
+<node id="Daniela Amodei">
+  <data key="d0">Person</data>
+  <data key="d1">#4A90D9</data>
+</node>
+<node id="Jack Clark">
+  <data key="d0">Person</data>
+  <data key="d1">#4A90D9</data>
+</node>
+<node id="Chris Olah">
+  <data key="d0">Person</data>
+  <data key="d1">#4A90D9</data>
+</node>
+<node id="San Francisco">
+  <data key="d0">Location</data>
+  <data key="d1">#F39C12</data>
+</node>
+<node id="Public Benefit Corporation">
+  <data key="d0">Concept</data>
+  <data key="d1">#9B59B6</data>
+</node>
+<node id="Claude">
+  <data key="d0">Product</data>
+  <data key="d1">#27AE60</data>
+</node>
+<node id="Constitutional AI">
+  <data key="d0">Concept</data>
+  <data key="d1">#9B59B6</data>
+</node>
+<node id="Amazon">
+  <data key="d0">Organization</data>
+  <data key="d1">#E85D4A</data>
+</node>
+<node id="Google">
+  <data key="d0">Organization</data>
+  <data key="d1">#E85D4A</data>
+</node>
+<node id="Nvidia">
+  <data key="d0">Organization</data>
+  <data key="d1">#E85D4A</data>
+</node>
+<node id="Microsoft">
+  <data key="d0">Organization</data>
+  <data key="d1">#E85D4A</data>
+</node>
+<node id="Amazon Web Services">
+  <data key="d0">Organization</data>
+  <data key="d1">#E85D4A</data>
+</node>
+<node id="Palantir">
+  <data key="d0">Organization</data>
+  <data key="d1">#E85D4A</data>
+</node>
+<node id="Department of Defense">
+  <data key="d0">Organization</data>
+  <data key="d1">#E85D4A</data>
+</node>
+<node id="Pete Hegseth">
+  <data key="d0">Person</data>
+  <data key="d1">#4A90D9</data>
+</node>
+<node id="Pentagon demands">
+  <data key="d0">Concept</data>
+  <data key="d1">#9B59B6</data>
+</node>
+<node id="Jan Leike">
+  <data key="d0">Person</data>
+  <data key="d1">#4A90D9</data>
+</node>
+<node id="John Schulman">
+  <data key="d0">Person</data>
+  <data key="d1">#4A90D9</data>
+</node>
+<node id="Anthropic Institute for AI Policy">
+  <data key="d0">Organization</data>
+  <data key="d1">#E85D4A</data>
+</node>
+<node id="Concord">
+  <data key="d0">Organization</data>
+  <data key="d1">#E85D4A</data>
+</node>
+<node id="Universal">
+  <data key="d0">Organization</data>
+  <data key="d1">#E85D4A</data>
+</node>
+<node id="ABKCO">
+  <data key="d0">Organization</data>
+  <data key="d1">#E85D4A</data>
+</node>
+<node id="Reddit">
+  <data key="d0">Organization</data>
+  <data key="d1">#E85D4A</data>
+</node>
+<node id="Google DeepMind">
+  <data key="d0">Organization</data>
+  <data key="d1">#E85D4A</data>
+</node>
+<node id="Google Brain and DeepMind">
+  <data key="d0">Organization</data>
+  <data key="d1">#E85D4A</data>
+</node>
+<node id="Demis Hassabis">
+  <data key="d0">Person</data>
+  <data key="d1">#4A90D9</data>
+</node>
+<node id="DeepMind">
+  <data key="d0">Organization</data>
+  <data key="d1">#E85D4A</data>
+</node>
+<node id="London">
+  <data key="d0">Location</data>
+  <data key="d1">#F39C12</data>
+</node>
+<node id="Mustafa Suleyman">
+  <data key="d0">Person</data>
+  <data key="d1">#4A90D9</data>
+</node>
+<node id="Inflection AI">
+  <data key="d0">Organization</data>
+  <data key="d1">#E85D4A</data>
+</node>
+<node id="Microsoft AI">
+  <data key="d0">Organization</data>
+  <data key="d1">#E85D4A</data>
+</node>
+<node id="Gemini series">
+  <data key="d0">Product</data>
+  <data key="d1">#27AE60</data>
+</node>
+<node id="OpenAI's GPT-4">
+  <data key="d0">Product</data>
+  <data key="d1">#27AE60</data>
+</node>
+<node id="Anthropic's Claude">
+  <data key="d0">Product</data>
+  <data key="d1">#27AE60</data>
+</node>
+<node id="Anthropic access to TPU chips">
+  <data key="d0">Concept</data>
+  <data key="d1">#9B59B6</data>
+</node>
+<node id="Google Cloud">
+  <data key="d0">Organization</data>
+  <data key="d1">#E85D4A</data>
+</node>
+<node id="Microsoft Azure">
+  <data key="d0">Organization</data>
+  <data key="d1">#E85D4A</data>
+</node>
+<node id="Nvidia H100 GPUs">
+  <data key="d0">Product</data>
+  <data key="d1">#27AE60</data>
+</node>
+<node id="Google TPUs">
+  <data key="d0">Product</data>
+  <data key="d1">#27AE60</data>
+</node>
+<node id="OpenAI">
+  <data key="d0">Organization</data>
+  <data key="d1">#E85D4A</data>
+</node>
+<node id="Meta AI">
+  <data key="d0">Organization</data>
+  <data key="d1">#E85D4A</data>
+</node>
+<node id="Bill Gates">
+  <data key="d0">Person</data>
+  <data key="d1">#4A90D9</data>
+</node>
+<node id="Paul Allen">
+  <data key="d0">Person</data>
+  <data key="d1">#4A90D9</data>
+</node>
+<node id="Satya Nadella">
+  <data key="d0">Person</data>
+  <data key="d1">#4A90D9</data>
+</node>
+<node id="Redmond">
+  <data key="d0">Location</data>
+  <data key="d1">#F39C12</data>
+</node>
+<node id="Washington">
+  <data key="d0">Location</data>
+  <data key="d1">#F39C12</data>
+</node>
+<node id="Windows">
+  <data key="d0">Product</data>
+  <data key="d1">#27AE60</data>
+</node>
+<node id="Office 365">
+  <data key="d0">Product</data>
+  <data key="d1">#27AE60</data>
+</node>
+<node id="GitHub">
+  <data key="d0">Product</data>
+  <data key="d1">#27AE60</data>
+</node>
+<node id="Copilot">
+  <data key="d0">Product</data>
+  <data key="d1">#27AE60</data>
+</node>
+<node id="Windows 11">
+  <data key="d0">Product</data>
+  <data key="d1">#27AE60</data>
+</node>
+<node id="Microsoft 365">
+  <data key="d0">Product</data>
+  <data key="d1">#27AE60</data>
+</node>
+<node id="GitHub Copilot">
+  <data key="d0">Product</data>
+  <data key="d1">#27AE60</data>
+</node>
+<node id="OpenAI Codex">
+  <data key="d0">Product</data>
+  <data key="d1">#27AE60</data>
+</node>
+<node id="European Union">
+  <data key="d0">Organization</data>
+  <data key="d1">#E85D4A</data>
+</node>
+<node id="US Department of Justice">
+  <data key="d0">Organization</data>
+  <data key="d1">#E85D4A</data>
+</node>
+<node id="Jensen Huang">
+  <data key="d0">Person</data>
+  <data key="d1">#4A90D9</data>
+</node>
+<node id="Santa Clara">
+  <data key="d0">Location</data>
+  <data key="d1">#F39C12</data>
+</node>
+<node id="H100">
+  <data key="d0">Product</data>
+  <data key="d1">#27AE60</data>
+</node>
+<node id="DGX-1">
+  <data key="d0">Product</data>
+  <data key="d1">#27AE60</data>
+</node>
+<node id="80% of GPU market">
+  <data key="d0">Concept</data>
+  <data key="d1">#9B59B6</data>
+</node>
+<node id="OpenAI funding round">
+  <data key="d0">Concept</data>
+  <data key="d1">#9B59B6</data>
+</node>
+<node id="AMD">
+  <data key="d0">Organization</data>
+  <data key="d1">#E85D4A</data>
+</node>
+<node id="Intel">
+  <data key="d0">Organization</data>
+  <data key="d1">#E85D4A</data>
+</node>
+<node id="Nvidia H100">
+  <data key="d0">Product</data>
+  <data key="d1">#27AE60</data>
+</node>
+<node id="Sam Altman">
+  <data key="d0">Person</data>
+  <data key="d1">#4A90D9</data>
+</node>
+<node id="GPT series">
+  <data key="d0">Product</data>
+  <data key="d1">#27AE60</data>
+</node>
+<node id="DALL-E">
+  <data key="d0">Product</data>
+  <data key="d1">#27AE60</data>
+</node>
+<node id="Sora">
+  <data key="d0">Product</data>
+  <data key="d1">#27AE60</data>
+</node>
+<node id="ChatGPT">
+  <data key="d0">Product</data>
+  <data key="d1">#27AE60</data>
+</node>
+<node id="Codex">
+  <data key="d0">Product</data>
+  <data key="d1">#27AE60</data>
+</node>
+<node id="AI services">
+  <data key="d0">Concept</data>
+  <data key="d1">#9B59B6</data>
+</node>
+<node id="io">
+  <data key="d0">Organization</data>
+  <data key="d1">#E85D4A</data>
+</node>
+<node id="Meta">
+  <data key="d0">Organization</data>
+  <data key="d1">#E85D4A</data>
+</node>
+<edge source="Dario Amodei" target="Anthropic">
+  <data key="d2">CO_FOUNDED</data>
+  <data key="d3">Anthropic.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="Dario Amodei" target="OpenAI">
+  <data key="d2">WAS_VICE_PRESIDENT_OF</data>
+  <data key="d3">OpenAI.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="Anthropic" target="San Francisco">
+  <data key="d2">HEADQUARTERED_IN</data>
+  <data key="d3">Anthropic.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="Anthropic" target="Public Benefit Corporation">
+  <data key="d2">OPERATES_AS</data>
+  <data key="d3">Anthropic.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="Anthropic" target="Claude">
+  <data key="d2">DEVELOPED</data>
+  <data key="d3">Anthropic.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="Anthropic" target="Amazon">
+  <data key="d2">INVESTED_IN</data>
+  <data key="d5">2023</data>
+  <data key="d3">Anthropic.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="Anthropic" target="Amazon Web Services">
+  <data key="d2">USES</data>
+  <data key="d3">Anthropic.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="Anthropic" target="Palantir">
+  <data key="d2">PARTNERED_WITH</data>
+  <data key="d3">Anthropic.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="Anthropic" target="Pentagon demands">
+  <data key="d2">REJECTED</data>
+  <data key="d3">Anthropic.md</data>
+  <data key="d4">1</data>
+</edge>
+<edge source="Daniela Amodei" target="Anthropic">
+  <data key="d2">CO_FOUNDED</data>
+  <data key="d3">Anthropic.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="Jack Clark" target="Anthropic">
+  <data key="d2">CO_FOUNDED</data>
+  <data key="d3">Anthropic.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="Jack Clark" target="Anthropic Institute for AI Policy">
+  <data key="d2">LEADS</data>
+  <data key="d3">Anthropic.md</data>
+  <data key="d4">1</data>
+</edge>
+<edge source="Chris Olah" target="Anthropic">
+  <data key="d2">CO_FOUNDED</data>
+  <data key="d3">Anthropic.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="Claude" target="Constitutional AI">
+  <data key="d2">BUILT_ON</data>
+  <data key="d3">Anthropic.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="Amazon" target="OpenAI">
+  <data key="d2">INVESTED_IN</data>
+  <data key="d5">2026</data>
+  <data key="d3">OpenAI.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="Google" target="Anthropic">
+  <data key="d2">COMMITTED</data>
+  <data key="d5">2022</data>
+  <data key="d3">Google_DeepMind.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="Google" target="DeepMind">
+  <data key="d2">ACQUIRED</data>
+  <data key="d3">Google_DeepMind.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="Google" target="Anthropic access to TPU chips">
+  <data key="d2">PROVIDED</data>
+  <data key="d3">Google_DeepMind.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="Nvidia" target="Anthropic">
+  <data key="d2">USED_BY</data>
+  <data key="d3">Nvidia.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="Nvidia" target="Santa Clara">
+  <data key="d2">HEADQUARTERED_IN</data>
+  <data key="d3">Nvidia.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="Nvidia" target="H100">
+  <data key="d2">DESIGNED</data>
+  <data key="d3">Nvidia.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="Nvidia" target="DGX-1">
+  <data key="d2">GIFTED</data>
+  <data key="d3">Nvidia.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="Nvidia" target="OpenAI">
+  <data key="d2">USED_BY</data>
+  <data key="d3">Nvidia.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="Nvidia" target="Google DeepMind">
+  <data key="d2">USED_BY</data>
+  <data key="d3">Nvidia.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="Nvidia" target="80% of GPU market">
+  <data key="d2">HELD</data>
+  <data key="d3">Nvidia.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="Nvidia" target="OpenAI funding round">
+  <data key="d2">PARTICIPATED_IN</data>
+  <data key="d5">2026</data>
+  <data key="d3">Nvidia.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="Nvidia" target="AMD">
+  <data key="d2">COMPETES_WITH</data>
+  <data key="d3">Nvidia.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="Nvidia" target="Intel">
+  <data key="d2">COMPETES_WITH</data>
+  <data key="d3">Nvidia.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="Microsoft" target="Anthropic">
+  <data key="d2">EXPECTED_TO_INVEST</data>
+  <data key="d3">Anthropic.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="Microsoft" target="Bill Gates">
+  <data key="d2">FOUNDED_BY</data>
+  <data key="d3">Microsoft.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="Microsoft" target="Paul Allen">
+  <data key="d2">FOUNDED_BY</data>
+  <data key="d3">Microsoft.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="Microsoft" target="Redmond">
+  <data key="d2">HEADQUARTERED_IN</data>
+  <data key="d3">Microsoft.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="Microsoft" target="Washington">
+  <data key="d2">HEADQUARTERED_IN</data>
+  <data key="d3">Microsoft.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="Microsoft" target="Windows">
+  <data key="d2">DEVELOPED</data>
+  <data key="d3">Microsoft.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="Microsoft" target="Microsoft Azure">
+  <data key="d2">DEVELOPED</data>
+  <data key="d3">Microsoft.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="Microsoft" target="Office 365">
+  <data key="d2">DEVELOPED</data>
+  <data key="d3">Microsoft.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="Microsoft" target="GitHub">
+  <data key="d2">ACQUIRED</data>
+  <data key="d3">Microsoft.md</data>
+  <data key="d4">0</data>
+  <data key="d5">2018</data>
+</edge>
+<edge source="Microsoft" target="Copilot">
+  <data key="d2">BUILT</data>
+  <data key="d3">Microsoft.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="Microsoft" target="OpenAI">
+  <data key="d2">INVESTED_IN</data>
+  <data key="d5">2019</data>
+  <data key="d3">Microsoft.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="Microsoft" target="Google">
+  <data key="d2">COMPETES_WITH</data>
+  <data key="d3">Microsoft.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="Microsoft" target="Amazon">
+  <data key="d2">COMPETES_WITH</data>
+  <data key="d3">Microsoft.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="Department of Defense" target="Anthropic">
+  <data key="d2">DESIGNATED</data>
+  <data key="d5">2025</data>
+  <data key="d3">Anthropic.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="Department of Defense" target="OpenAI">
+  <data key="d2">AWARDED</data>
+  <data key="d3">OpenAI.md</data>
+  <data key="d4">1</data>
+</edge>
+<edge source="Pete Hegseth" target="Anthropic">
+  <data key="d2">THREATENED</data>
+  <data key="d3">Anthropic.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="Jan Leike" target="Anthropic">
+  <data key="d2">JOINED</data>
+  <data key="d5">2024</data>
+  <data key="d3">Anthropic.md</data>
+  <data key="d4">1</data>
+</edge>
+<edge source="John Schulman" target="Anthropic">
+  <data key="d2">JOINED</data>
+  <data key="d5">2024</data>
+  <data key="d3">Anthropic.md</data>
+  <data key="d4">1</data>
+</edge>
+<edge source="Concord" target="Anthropic">
+  <data key="d2">SUED</data>
+  <data key="d5">2023</data>
+  <data key="d3">Anthropic.md</data>
+  <data key="d4">1</data>
+</edge>
+<edge source="Universal" target="Anthropic">
+  <data key="d2">SUED</data>
+  <data key="d5">2023</data>
+  <data key="d3">Anthropic.md</data>
+  <data key="d4">1</data>
+</edge>
+<edge source="ABKCO" target="Anthropic">
+  <data key="d2">SUED</data>
+  <data key="d5">2023</data>
+  <data key="d3">Anthropic.md</data>
+  <data key="d4">1</data>
+</edge>
+<edge source="Reddit" target="Anthropic">
+  <data key="d2">SUED</data>
+  <data key="d3">Anthropic.md</data>
+  <data key="d4">1</data>
+</edge>
+<edge source="Google DeepMind" target="Google Brain and DeepMind">
+  <data key="d2">FORMED_BY</data>
+  <data key="d3">Google_DeepMind.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="Google DeepMind" target="London">
+  <data key="d2">HEADQUARTERED_IN</data>
+  <data key="d3">Google_DeepMind.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="Google DeepMind" target="Gemini series">
+  <data key="d2">DEVELOPED</data>
+  <data key="d3">Google_DeepMind.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="Google DeepMind" target="Nvidia H100 GPUs">
+  <data key="d2">USES</data>
+  <data key="d3">Google_DeepMind.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="Google DeepMind" target="Google TPUs">
+  <data key="d2">USES</data>
+  <data key="d3">Google_DeepMind.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="Google DeepMind" target="OpenAI">
+  <data key="d2">COMPETES_WITH</data>
+  <data key="d3">Google_DeepMind.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="Google DeepMind" target="Anthropic">
+  <data key="d2">COMPETES_WITH</data>
+  <data key="d3">Google_DeepMind.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="Google DeepMind" target="Meta AI">
+  <data key="d2">COMPETES_WITH</data>
+  <data key="d3">Google_DeepMind.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="Google DeepMind" target="Nvidia H100">
+  <data key="d2">USES</data>
+  <data key="d3">Nvidia.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="Demis Hassabis" target="DeepMind">
+  <data key="d2">FOUNDED</data>
+  <data key="d3">Google_DeepMind.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="Demis Hassabis" target="Google DeepMind">
+  <data key="d2">CEO_OF</data>
+  <data key="d3">Google_DeepMind.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="Mustafa Suleyman" target="DeepMind">
+  <data key="d2">LEFT</data>
+  <data key="d3">Google_DeepMind.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="Mustafa Suleyman" target="Inflection AI">
+  <data key="d2">CO_FOUNDED</data>
+  <data key="d3">Google_DeepMind.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="Mustafa Suleyman" target="Microsoft AI">
+  <data key="d2">CEO_OF</data>
+  <data key="d3">Microsoft.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="Mustafa Suleyman" target="Microsoft">
+  <data key="d2">JOINED</data>
+  <data key="d3">Microsoft.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="Gemini series" target="OpenAI's GPT-4">
+  <data key="d2">COMPETES_WITH</data>
+  <data key="d3">Google_DeepMind.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="Gemini series" target="Anthropic's Claude">
+  <data key="d2">COMPETES_WITH</data>
+  <data key="d3">Google_DeepMind.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="Google Cloud" target="Amazon Web Services">
+  <data key="d2">COMPETES_WITH</data>
+  <data key="d3">Google_DeepMind.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="Google Cloud" target="Microsoft Azure">
+  <data key="d2">COMPETES_WITH</data>
+  <data key="d3">Google_DeepMind.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="Microsoft Azure" target="Amazon Web Services">
+  <data key="d2">COMPETES_WITH</data>
+  <data key="d3">Microsoft.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="Microsoft Azure" target="Google Cloud">
+  <data key="d2">COMPETES_WITH</data>
+  <data key="d3">Microsoft.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="OpenAI" target="Microsoft Azure">
+  <data key="d2">HOSTED_ON</data>
+  <data key="d3">Microsoft.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="OpenAI" target="DGX-1">
+  <data key="d2">RECEIVED</data>
+  <data key="d3">Nvidia.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="OpenAI" target="San Francisco">
+  <data key="d2">HEADQUARTERED_IN</data>
+  <data key="d3">OpenAI.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="OpenAI" target="GPT series">
+  <data key="d2">DEVELOPED</data>
+  <data key="d3">OpenAI.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="OpenAI" target="DALL-E">
+  <data key="d2">CREATED</data>
+  <data key="d3">OpenAI.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="OpenAI" target="Sora">
+  <data key="d2">CREATED</data>
+  <data key="d3">OpenAI.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="OpenAI" target="ChatGPT">
+  <data key="d2">CREATED</data>
+  <data key="d3">OpenAI.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="OpenAI" target="Codex">
+  <data key="d2">USED</data>
+  <data key="d3">OpenAI.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="OpenAI" target="AI services">
+  <data key="d2">PROVIDED</data>
+  <data key="d3">OpenAI.md</data>
+  <data key="d4">1</data>
+</edge>
+<edge source="OpenAI" target="io">
+  <data key="d2">ACQUIRED</data>
+  <data key="d3">OpenAI.md</data>
+  <data key="d4">1</data>
+</edge>
+<edge source="OpenAI" target="Anthropic">
+  <data key="d2">COMPETES_WITH</data>
+  <data key="d3">OpenAI.md</data>
+  <data key="d4">1</data>
+</edge>
+<edge source="OpenAI" target="Google DeepMind">
+  <data key="d2">COMPETES_WITH</data>
+  <data key="d3">OpenAI.md</data>
+  <data key="d4">1</data>
+</edge>
+<edge source="OpenAI" target="Meta">
+  <data key="d2">COMPETES_WITH</data>
+  <data key="d3">OpenAI.md</data>
+  <data key="d4">1</data>
+</edge>
+<edge source="Satya Nadella" target="Microsoft">
+  <data key="d2">CEO_OF</data>
+  <data key="d3">Microsoft.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="Copilot" target="Windows 11">
+  <data key="d2">INTEGRATED_IN</data>
+  <data key="d3">Microsoft.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="Copilot" target="Microsoft 365">
+  <data key="d2">INTEGRATED_IN</data>
+  <data key="d3">Microsoft.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="GitHub Copilot" target="OpenAI Codex">
+  <data key="d2">BUILT_ON</data>
+  <data key="d3">Microsoft.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="European Union" target="Microsoft">
+  <data key="d2">OPENED_INVESTIGATIONS_INTO</data>
+  <data key="d3">Microsoft.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="US Department of Justice" target="Microsoft">
+  <data key="d2">INVESTIGATED</data>
+  <data key="d3">Microsoft.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="Jensen Huang" target="Nvidia">
+  <data key="d2">CEO_OF</data>
+  <data key="d3">Nvidia.md</data>
+  <data key="d4">0</data>
+</edge>
+<edge source="Sam Altman" target="OpenAI">
+  <data key="d2">CEO_OF</data>
+  <data key="d3">OpenAI.md</data>
+  <data key="d4">0</data>
+</edge>
+</graph></graphml>

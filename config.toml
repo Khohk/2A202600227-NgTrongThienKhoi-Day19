@@ -1,0 +1,12 @@
+[chunking]
+chunk_size = 200   # words per chunk
+overlap    = 20    # words overlap between chunks
+
+[standardization]
+enabled              = true
+use_llm_for_entities = false  # true = dùng LLM, false = chỉ rapidfuzz
+
+[inference]
+enabled               = true
+use_llm_for_inference = false # true = dùng LLM, false = chỉ transitive rules
+apply_transitive      = true  # A→B, B→C  ⟹  A→C (rule-based)

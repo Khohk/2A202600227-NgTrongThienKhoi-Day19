@@ -1,0 +1,49 @@
+# Environment
+.env
+.env.local
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+
+# Data (không commit raw/processed data lên git)
+data/raw/
+data/processed/
+data/chroma_db/
+
+# Outputs — exclude large/intermediate files but keep deliverables
+outputs/graphs/*.png
+outputs/graphs/*.html
+outputs/results/*.json
+outputs/results/*.csv
+# Deliverables cần push
+!outputs/graphs/kg_llm.png
+!outputs/graphs/kg_test.png
+!outputs/results/benchmark.csv
+!outputs/results/token_usage.csv
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# IDE
+.vscode/
+.idea/
+*.suo
+*.user
+
+# OS
+.DS_Store
+Thumbs.db
+
+# NodeRAG cache
+.noderag/
+noderag_cache/

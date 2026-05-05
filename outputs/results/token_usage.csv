@@ -1,0 +1,5 @@
+stage,calls,prompt_tokens,completion_tokens,cost_usd,note
+extraction,7,4956,3234,0.002684,actual
+standardization,1,331,972,0.000633, (use_llm=True)
+inference,1,162,150,0.000114, (use_llm=True)
+TOTAL,,5449,4356,0.003431,
